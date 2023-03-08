@@ -1,67 +1,98 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Rob Anderson's Profile</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Rob Anderson's Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
 </head>
 
 <body>
-  <div class="main-nav">
-    <ul class="nav">
-      <li class="name">Rob Anderson</li>
-      <li><a href="#">Home</a></li>
-      <li><a href="resume.html">Experience</a></li>
-      <li><a href="#">Photos</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
- 
+    <nav class="main-nav">
+      <ul class="nav">
+        <li class="name">Rob Anderson</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#">Photos</a></li>
+        <li><a href="#contact">Contact</a></li>  
+      </ul>
+    </nav>
+
     <header>
       <img src="images/headshot.jpeg" alt="Sketchy image of Rob" class="profile-image">
       <h1 class="tag name">Hi friends, I'm Rob</h1>
       <p class="tag location">My home is Arizona</p>
     </header>
 
-    <main class="flex">
-      <div class="card">
-        <h2 class="card-title">Background</h2>
-        <ul>
-          <li><p>I'm excited to begin a new career in web development.  I'm interested in user experience, distributed networks, virtual computing, and blockchain technologies.</p></li>
-          <li><p>My background is in aerospace engineering, military rotary-wing aviation, and professional civilian rotary-wing aviation.</p></li>
-          <li><p>I believe the future internet is a distributed, mobile, user-owned, fully-integrated AR/VR experience</p></li>
-          <li>To learn more, <a href="resume.html">view my resume</a></li>
-        </ul>
-      </div> 
-      <div class="card">
-        <h2 class="card-title">Goals</h2>
-        <ul class="goals">
-          <li>Master the art of building beautiful, intuitive apps</li>
-          <li>Build advanced back-end development skillsets</li>
-          <li>Refine these skills through OJT and self-learning</li>
-          <li>Leverage this foundation into web3 development</li>
-        </ul>
-        <ul class="skills">
-          <li class="mern">HTML/CSS</li>
-          <li class="mern">JavaScript</li>
-          <li class="mern">MERN Stack</li><br>
-          <li class="python">Python</li>
-          <li class="python">Django</li><br>
-          <li class="ethereum">Solidity</li>
-          <li class="ethereum">Ether.js</li>
-          <li class="ethereum">Hardhat</li>
-        </ul>
-        <p>I'd like to work for a future-oriented, web-centric organization and help lay the groundwork for the next internet.</p>
-      </div> 
+    <main>
+      <div class="flex"> 
+        <div class="card">
+          <h2 class="card-title">Background</h2>
+          <ul>
+            <li><p>I'm excited to begin a new career in web development.  I'm interested in user experience, distributed networks, and virtual computing.</p></li>
+            <li><p>My professional experience is in aerospace engineering as well as military and civilian rotary-wing aviation.</p></li>
+            <li><p>I believe the future internet is a distributed, mobile, user-owned, fully-integrated AR/VR experience</p></li>
+            <li>To learn more, view my <a href="resume.html">resume</a> and <a href="photos.html">photos</a></li>
+          </ul>
+        </div> 
+        <div class="card">
+          <h2 class="card-title">Goals</h2>
+          <ul class="goals">
+            <li><p>Master the art of building beautiful, intuitive apps</p></li>
+            <li><p>Increase proficiency in back-end development tools</p></li>
+            <li><p>Refine these skills through self-learning and freelance</p></li>
+            <li>Leverage this foundation into full-time development</li>
+          </ul>
+          <p class="mission"><em><strong>I'm pursuing a role at a future-oriented, web-centric, remote-first organization to contribute, learn, and grow.</strong></em></p>
+          <ul class="skills">
+            <li>HTML/CSS</li> 
+            <li>JavaScript</li>
+            <li>MERN Stack</li>
+            <li>Python</li>
+            <li>Django</li>
+            <li>SQL</li>
+            <li>Solidity</li>
+            <li>Ether.js</li>
+            <li>Hardhat</li>
+          </ul>
+        </div> 
+      </div>
+      <div class="flex" id="experience">
+        <div class="card">
+          <h2 class="card-title">Aviation</h2>
+          <ul>
+            <li><p>FAA Airline Transport Pilot - Helicopter</p></li>
+            <li><p>US Army H60 Black Hawk Maintenance Test Pilot</p></li>
+            <li><p>Overseas MEDEVAC deployments, 2023 & 2016</p></li>
+            <li><p>Offshore Oil & Gas Pilot, 2021-22</p></li>
+            <li><p>Wildland Fire Pilot, 2021 & 2018</p></li>
+            <li><p>2,700 turbine helicopter flight hours</p></li>
+            <li><p>S-92, S-70/M, B407, and B206 airframe experience</p></li>
+          </ul>
+        </div> 
+        <div class="card">
+          <h2 class="card-title">Engineering</h2>
+          <ul class="goals">
+            <li><p>Propulsion Engineer, Orbital ATK, 2007-18</p></li>
+            <ul>
+              <li><p>Orbital launch vehicle solid rocket motors</p></li>
+              <li><p>Stage separation and flight termination ordnance</p></li>
+            </ul>
+            <li><p>Gas Turbine Overhaul Engineer, Honeywell, 2006-07</p></li>
+            <li><p>BS Aero. & Astro. Engineering, Purdue 2005</p></li>
+            <li><p>Fellow, Zucrow High Pressure Lab, 2005</p></li>
+            <li><p>VP, Aero & Astro Student Advisory Council, 2003</p></li>
+          </ul>
+        </div>  
+      </div>
     </main>
     
     <footer>
-      <ul>
-        <li><a href="https://twitter.com" target="_blank" class="social twitter">Twitter</a></li>
-        <li><a href="#" class="social linkedin">LinkedIn</a></li>
-        <li><a href="#" class="social github">Github</a></li>
+      <ul id="contact">
+        <li><a href="https://twitter.com/RobAnde55808607" target="_blank" class="social twitter">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/engineer-pilot-rob-anderson" target="_blank" class="social linkedin">LinkedIn</a></li>
+        <li><a href="https://github.com/RobAnderson-Dev" target="_blank" class="social github">Github</a></li>
       </ul>
       <p class="copyright">Copyright 2023, Rob Anderson</p>
     </footer>
