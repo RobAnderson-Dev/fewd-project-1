@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Rob's Photos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="photos.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
 </head>
 
-<body>
-    <nav class="main-nav">
+<body id="photos-body">
+    <nav class="header-nav">
         <ul class="nav">
             <li class="name">Rob Anderson</li>
             <li><a href="index.html">Home</a></li>
@@ -19,14 +19,14 @@
         </ul> 
     </nav>
 
-    <header>
-        <img src="images/solo.jpeg" alt="Rob in Kosovo" class="photos-image">
-        <h1 class="tag name">Galleria</h1>
-        <p class="tag location">A few pics from along the way</p>
+    <header id="photos-header">
+        <img src="images/solo.jpeg" alt="Rob in Kosovo" class="profile-image" id="photos-profile-image">
+        <h1 class="tag">Galleria</h1>
+        <p class="tag tag-subtext">Some pics from along the way</p>
     </header>
 
     <main> 
-        <div class="flex">
+        <div class="photos-flex">
             <div><img class="photo" src="images/walk.jpeg" alt="Rob with baby and dogs"></div>
             <div><img class="photo" src="images/kfor.jpeg" alt="medevac helicopter in kosovo"></div>
             <div><img class="photo" src="images/clouds.jpeg" alt="helicopters on the ramp in Texas"></div>

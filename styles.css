@@ -9,13 +9,33 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
+}
+
+/* Blended Background Images */
+
+#index-body {
   background: url("images/highway-sign.jpeg"), #b6c3a0a9;
   background-position: bottom;
   background-blend-mode: lighten;
   background-attachment: fixed;
   background-size: 100%;
 }
-/* Link Styles */
+#resume-body {
+  background: url("images/mission.jpeg"), #b6c3a0a9;
+  background-position: bottom;
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+#photos-body {
+  background: url("images/hawk.jpeg"), #b6c3a0a9;
+  background-position: bottom;
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+/* Global Link Styling */
 
 a {
   text-decoration: none;
@@ -25,9 +45,9 @@ a:hover {
   color: #564138;
 }
 
-/* Section Styles */
+/* Navigation Bar Styling */
 
-.main-nav {
+.header-nav {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -56,28 +76,49 @@ a:hover {
   color: white
 }
 
-header {
-  text-align: center;
-  background: url('images/catalinas.jpeg') no-repeat top center ;
+/* Header Images */
+
+#index-header {
+  background: url('images/catalinas.jpeg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
-  /* box-shadow: 0px 0px 3px 5px #e2fcb3da inset; */
 }
+#resume-header {
+  background: url('images/little-heli.jpeg') no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+}
+#photos-header {
+  background: url('images/sedona.jpeg') no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Header Styling */
+
 header {
+  text-align: center;
+  padding-top: 60px;
   line-height: 1.5;
 }
 header .profile-image {
   margin-top: 50px;
-  width: 150px;
   height: 200px;
   border-radius: 35%;
   border: 3px solid white;
   transition: all 1.5s;
 }
 header .profile-image:hover {
-  /* transform: scale(1) rotate(360deg); */
   transform: rotateY(360deg);
+}
+#index-profile-image {
+  width: 150px;
+}
+#resume-profile-image {
+  width: 175px;
+}
+#photos-profile-image {
+  width: 175px;
 }
 .tag {
   background-color: #f8f2f2d2;
@@ -88,11 +129,24 @@ header .profile-image:hover {
   margin: 10px auto;
   box-shadow: 2px 2px 3px #2222227e;
 } 
-.location {
+.tag-subtext {
   background-color: #222;
   color: #2e86ab;
 }
-.card {
+
+/* Resume Page Tag-Subtext Link */
+
+.linked-in {
+  transition: all .5s;
+}
+
+.linked-in:hover {
+  color: white;
+}
+
+/* Index Page Card Styling */
+
+.index-card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -104,20 +158,26 @@ header .profile-image:hover {
   box-shadow: 10px 10px 5px #2222227e;
   transition: all 1s;
 }
-.card:hover {
-  /* border-color: #564138; */
+.index-card:hover {
   transform: scale(1.1, 1.1);
 }
-
+.card-title {
+  text-align: center;
+  color: #f8f2f2e3;
+  background-color: #2e86abd3;
+  margin-top: 50px;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 2px 2px 3px #2222227e;
+}
 ul.skills {
   padding: 0;
   text-align: center;
 }
-
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  /* background: #EE5044; */
   color: white;
   padding: 5px 10px;
   margin: 2px;
@@ -128,33 +188,85 @@ ul.skills {
 .skills li:nth-child(odd) {
   background: #564138d6;
 }
-
 .mission {
   text-align: center;
 }
+
+/* Resume Page Styling */
+
+.resume-card {
+  margin: 30px auto;
+  padding: 20px 40px 40px;
+  max-width: 900px;
+  background: #f8f2f2ee;
+  border-bottom: 4px solid #ccc;
+  border-right: 4px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 10px 10px 5px #2222227e;
+  transition: all 1s;
+}
+.resume-card:hover {
+  transform: scale(1.05, 1.05);
+}
+.section-title {
+  display: inline-block;
+  text-align: center;
+  color: #f8f2f2e3;
+  background-color: #2e86abd3;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 2px 2px 3px #2222227e;
+}
+.section-title-text {
+  width: 400px;
+  margin: 0 auto;
+}
+.left-text {
+  text-align: left;
+  max-width: 500px;
+}
+.right-text {
+  text-align: right;
+  max-width: 300px;
+}
+
+/* Photos Page Styling */
+
+.photo {
+  margin: 50px;
+  width: 350px;
+  height: 350px;
+  border-radius: 10%;
+  border: 3px solid white;
+  transition: all 1.5s;
+}
+.photo:hover {
+  transform: scale(1.5, 1.5);
+}
+
+/* Global Footer Styling */
 
 footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
 }
-
 footer .copyright {
   top: -8px;
   margin-right: 20px;
   font-size: .75em;
 }
-
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
 footer ul li {
   display: inline-block;
 }
-
 a.social {
   display: inline-block;
   text-indent: -9999px;
@@ -181,15 +293,30 @@ a.social:hover {
   clear: both;
 }
 
-/* Styles for larger screens */
+/* Styles for Larger Screens */
+
 @media screen and (min-width: 720px) {
   
-  .flex {
+  .index-flex {
       display: flex;
       max-width: 1200px;
       justify-content: space-around;
       margin: 0 auto;
   }
+  .resume-flex {
+    display: flex;
+    max-width: 750px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .photos-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
 
   header {
     min-height: 450px;
@@ -219,16 +346,4 @@ a.social:hover {
     margin: 40px auto;
   }
 
-}
-.card-title {
-  text-align: center;
-  color: #f8f2f2e3;
-  background-color: #2e86abd3;
-  /* border: solid rgba(0, 0, 0, 0.641) 3px;
-  border-radius: 10px; */
-  margin-top: 50px;
-  border-bottom: 2px solid #ccc;
-  border-right: 2px solid #ccc;
-  border-radius: 6px;
-  box-shadow: 2px 2px 3px #2222227e;
 }
